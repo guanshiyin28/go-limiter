@@ -1,0 +1,62 @@
+# Binaries for programs and plugins
+main
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, produced by `go test -coverprofile`
+*.out
+
+# Dependency directories (GOPATH caching is preferred over vendor/)
+vendor/
+
+
+# --- C++ / Build Artifacts ---
+*.o
+*.obj
+*.a
+*.lib
+*.db
+kv_engine
+super-kv
+
+
+# --- Docker & Environment ---
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+docker-compose.override.yml
+
+
+# --- IDE & System Garbage ---
+# JetBrains (GoLand, CLion)
+.idea/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Windows garbage
+Thumbs.db
+desktop.ini
+
+# Linux/Mac garbage
+.DS_Store
+
+
+# --- Temporary / Crash Reports ---
+core
+*.prof
+*.pprof

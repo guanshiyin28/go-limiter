@@ -1,0 +1,36 @@
+# Dependency folders
+vendor/
+node_modules/
+
+# Binary & Build artifacts
+bin/
+main
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Rust/C++ artifacts (kalau ada sisa project tadi)
+target/
+*.o
+*.a
+
+# Docker-specific
+.dockerignore
+Dockerfile
+docker-compose.yml
+.devcontainer/
+
+# IDE & OS garbage
+.vscode/
+.idea/
+.git/
+.gitignore
+*.swp
+.DS_Store
+thumbs.db
+
+# Logs
+*.log
+
+assets/
