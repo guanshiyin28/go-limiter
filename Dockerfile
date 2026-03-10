@@ -22,7 +22,7 @@ RUN go build -ldflags="-s -w -X main.Version=${APP_VERSION}" -o main .
 FROM alpine:3.19 AS runner
 WORKDIR /app
 #metadata
-LABEL author="Yansha"
+LABEL author="VAXA STUDIO"
 LABEL project="Go Distributed Limiter"
 # Create non-root user
 RUN addgroup --system --gid 1001 gopher && \
